@@ -50,6 +50,12 @@ class Bank {
       throw new Error('Not converted to local format')
     }
   }
+  processing (outMoney) {
+    let feesCalc = outMoney.times(0.02)
+    console.log(feesCalc)
+    return feesCalc
+  }
+  // 2% processing
 }
 
 export default Bank

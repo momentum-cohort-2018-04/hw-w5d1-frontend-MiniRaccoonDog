@@ -37,3 +37,11 @@ test('convert to output', () => {
   // console.log(inAMDollars)
   expect(inAMDollars).toEqual(new Money(9.47, 'AMD'))
 })
+
+test('processing fees', () => {
+  const lionstodollars = new Bank(3, 'NLN', 4.61, 'AMD', 1.46)
+  const inAMDollars = lionstodollars.convertToOutput()
+  const returnfees = lionstodollars.processing(inAMDollars)
+  console.log(returnfees)
+  expect(returnfees).toEqual(new Money(0.19, 'AMD'))
+})
