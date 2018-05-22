@@ -32,7 +32,8 @@ class Bank {
     // console.log(usdVal)
     if (usdVal) {
       // console.log('IF ran')
-      let outValue = (usdVal).divide(this.outRates)
+      // let outValue = (usdVal).divide(this.outRates)
+      let outValue = (usdVal).times(this.outRates)
       // console.log(outValue)
       // let outValueAmount = outValue.round(outValue._amount, 2)
       // console.log(outValueAmount)
