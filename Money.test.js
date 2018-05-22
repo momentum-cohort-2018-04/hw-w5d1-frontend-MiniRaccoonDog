@@ -49,7 +49,8 @@ test('Money cannot be more precise than 3 decimal places', () => {
   expect(money1).toEqual(new Money(0.001, 'USD'))
 
   expect(() => {
-    const money2 = new Money(0.0001, 'USD')
+    const money2 = new Money(0.000001, 'USD')
+    // console.log(money2)
   }).toThrowError()
 })
 
@@ -58,13 +59,18 @@ test('Money can be multiplied', () => {
   expect((new Money(2, 'USD').times(3))).toEqual(new Money(6, 'USD'))
 })
 
+test('Money can be divided', () => {
+  // expect((new Money(0.2, 'USD').times(3))).toEqual(new Money(0.6, 'USD'))
+  expect((new Money(6, 'USD').divide(3))).toEqual(new Money(2, 'USD'))
+})
+
 test('Money should not have floating point errors', () => {
   const money1 = new Money(0.2, 'USD')
   expect(money1.times(3)).toEqual(new Money(0.6, 'USD'))
 })
 
-test('rates should be defined', () => {
-  const money1 = new Money(8, 'NLN', 4.61)
-  console.log(money1.rate)
-  expect(money1.rate).toEqual(4.61)
-})
+// test('rates should be defined', () => {
+//   const money1 = new Money(8, 'NLN', 4.61)
+//   console.log(money1.rate)
+//   expect(money1.rate).toEqual(4.61)
+// })

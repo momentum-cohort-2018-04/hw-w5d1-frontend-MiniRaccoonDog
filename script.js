@@ -1,6 +1,6 @@
 import $ from 'jquery'
 import request from 'superagent'
-import Money from './Money'
+// import Money from './Money'
 
 $(document).ready(function () {
   request.get(`http://fantasy-currency.glitch.me/rates`)
