@@ -20,7 +20,7 @@ $(document).ready(function () {
 })
 
 function buildDropdown (array) {
-  const dropdown = []
+  const dropdown = [`<option value="USD" data_rate=1>US Dollars</option>`]
   for (var i in array) {
     let entry = array[i]
     let value = entry.abbr
