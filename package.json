@@ -10,11 +10,6 @@
   "scripts": {
     "test": "jest"
   },
-  "jest": {
-    "transform": {
-      "^.+\\.jsx?$": "babel-jest"
-    }
-  },
   "dependencies": {
     "jquery": "^3.3.1"
   }
