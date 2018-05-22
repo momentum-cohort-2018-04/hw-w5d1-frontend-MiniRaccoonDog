@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <title>Trans-Dimensional Bank</title> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.scss" />
+  <script src="script.js"></script>
+</head>
+<body>
+  <content class="info">
+    <h1>Welcome to the Trans-Dimensional Bank</h1>
+    <h3>Currency Conversion</h3>
+    <p>Enter in your currency type and amount and select the appropriate conversion to view the exchange rates and conversion fee.</p>
+    <p>If you do not see a currency you desire listed, please contact our main branch</p>
+  </content>
+  <content class="main">
+  <subcontent class="main__right">
+    <h4>Convert From</h4>
+    <input id="convert_amount" class="input" type="text" placeholder="value">
+    <select id="convert_from" class="currency input">
+    </select>
+  </subcontent>
+  <subcontent class="main__left">
+    <h4>Convert To</h4>
+    <select id="convert_to" class="currency input">
+    </select>
+    <input type="text" placeholder="value" disabled>
+    <div class="fees">THIS IS WHAT U OWE</div>
+  </subcontent>
+  </content>
+</body>
+</html>
