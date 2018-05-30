@@ -1,0 +1,33 @@
+*{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+.info {
+  flex-direction: column;
+  margin: 1rem;
+}
+h1{
+  margin: 2rem 0;
+}
+.main {
+  margin: 1rem;
+  flex-wrap: flex;
+  flex-direction: row;
+  text-align: center;
+  &__right{
+    width: 50%;
+    padding-left: 3rem;
+    padding-right: 1rem;
+  }
+  &__left{
+    width: 50%;
+    padding-right: 3rem;
+    padding-left: 1rem;
+  }
+  .fees{
+    font-style: italic;
+  }
+}
